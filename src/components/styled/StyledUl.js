@@ -6,6 +6,7 @@ const StyledUl = styled.ul`
     align-items: center;
     justify-content: space-between;
     list-style-type: none;
+    font-size: 1.2rem;
 `
 
 export default StyledUl

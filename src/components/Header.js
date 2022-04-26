@@ -2,6 +2,8 @@
 import images from '../assets/images'
 import React from 'react'
 import colors from "../assets/colors"
+import { Link } from 'react-router-dom'
+
 
 // COMPONENTS
 import UserUl from './UserUl'
@@ -13,15 +15,17 @@ const Header = ()=>{
         height: 100,
         display: 'flex',
         alignItems: 'center',
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
+        borderBottom: `solid 7px ${colors.doosanYellow}`
     }
     const imgStyle={
         width: 200,
         margin: 'auto 0 auto 20px',
+        cursor:'pointer'
     }
     return(
         <header style={headerStyle}>
-            <img style={imgStyle} src={images.cogLogo} alt=""/>
+            <Link to='/'><img style={imgStyle} src={images.cogLogo} alt=""/></Link>
             <NavUl/>
             <UserUl/>
         </header>

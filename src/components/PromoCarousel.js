@@ -1,5 +1,6 @@
 import images from '../assets/images.js'
 import colors from '../assets/colors.js'
+import { useState,useEffect,useRef } from 'react'
 
 const promoData =[
     {   id:1,
@@ -66,10 +67,17 @@ const PromoCarousel = ()=>{
             fontWeight: 300
         }
 
+        // USE STATE HOOK TO SET INDEX FOR CAROUSEL
+        let [activeIdx,setactiveIdx] = useState(0)
+        // const idx = useRef()
+
+        // https://overreacted.io/making-setinterval-declarative-with-react-hooks/#just-show-me-the-code
+        // create a useinterval hook from these instructions
+
         return promoData.map(data=> {
             const containerStyle={
-                
                 position: 'relative',
+                // left: '50%',
                 display: 'flex',
                 background: ` #ffffff2a url(${data.productBg}) no-repeat center`,
                 backgroundSize: 'cover',
@@ -78,7 +86,8 @@ const PromoCarousel = ()=>{
                 height: 700
             }
             return(
-            <div key={data.id} style={containerStyle}>
+            <div key={data.id}  
+            style={containerStyle}>
                 <div style={promoTextStyle}>
                     <div style={colorLayerStyle}></div>
                     <h1 style={titleStyle}>{data.product.toUpperCase()}</h1>
