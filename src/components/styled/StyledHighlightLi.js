@@ -12,6 +12,7 @@ const StyledHighlightLi = styled.li`
     border-radius: 50%;
     box-shadow: 0 1px 2px rgba(0,0,0, .5);
     cursor: pointer;
+    z-index:0;
     &::after{
         content: '';
         height: 90%;
@@ -22,6 +23,7 @@ const StyledHighlightLi = styled.li`
         left: -5%;
         border: 1px solid ${colors.doosanLightBlue};
         transform: rotate(-5deg);
+        z-index: -1;
     }
 `
 

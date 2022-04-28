@@ -15,11 +15,30 @@ code {
     monospace;
 }
 
-.hidden{
-  display: none;
-  
+/* .images img.left{
+  transform: translateX(-100%);
+  transition: .5s all;
 }
 
-.active{
+.images img.right{
+  transform: translateX(100%);
+  transition: .5s all;
+}
 
+.images img.show{
+  transform: translateX(0%);
+  transition: .5s all;
+} */
+
+#root, #app, #map {
+  height: 100%;
+}
+
+#state {
+  width: 200px;
+  float: left;
+}
+
+#map {
+  margin-left: 200px;
 }

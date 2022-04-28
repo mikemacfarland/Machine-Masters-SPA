@@ -1,6 +1,7 @@
 import images from '../assets/images.js'
 import colors from '../assets/colors.js'
 import { useState,useEffect,useRef } from 'react'
+import { act } from 'react-dom/test-utils'
 
 const promoData =[
     {   id:1,
@@ -68,25 +69,36 @@ const PromoCarousel = ()=>{
         }
 
         // USE STATE HOOK TO SET INDEX FOR CAROUSEL
-        let [activeIdx,setactiveIdx] = useState(0)
-        // const idx = useRef()
+        let [activeIdx,setactiveIdx] = useState(1)
+        
+        useEffect(() => {
+            const interval = setInterval(() => {
+                setactiveIdx(activeIdx ++)
+              if(activeIdx > promoData.length){
+                  activeIdx = 1
+              };
+            }, 5000);
+            return () => clearInterval(interval);
+          }, []);
 
+        // ideas and concepts nuances of set interval with react understood from this article
         // https://overreacted.io/making-setinterval-declarative-with-react-hooks/#just-show-me-the-code
         // create a useinterval hook from these instructions
 
-        return promoData.map(data=> {
+        return promoData.map(data => {
             const containerStyle={
-                position: 'relative',
-                // left: '50%',
+                position: 'absolute',
                 display: 'flex',
                 background: ` #ffffff2a url(${data.productBg}) no-repeat center`,
                 backgroundSize: 'cover',
                 flexDirection: 'row',
                 backgroundColor: 'white',
-                height: 700
+                height: 700,
+                borderBottom: `7px solid ${colors.doosanYellow}`
             }
+            if(data.id === activeIdx){
             return(
-            <div key={data.id}  
+            <div key={data.id}
             style={containerStyle}>
                 <div style={promoTextStyle}>
                     <div style={colorLayerStyle}></div>
@@ -97,6 +109,7 @@ const PromoCarousel = ()=>{
                 <img style={promoImgStyle} src={data.productImg} alt="" />
             </div>
             )
+        }
         })
     }
     

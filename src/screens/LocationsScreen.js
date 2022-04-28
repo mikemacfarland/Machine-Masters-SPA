@@ -1,6 +1,10 @@
 const LocationsScreen = ()=>{
     return(
-        <div>Locations</div>
+        <div>Locations
+            <div id='map'>
+            
+            </div>
+        </div>
     )
 }
 

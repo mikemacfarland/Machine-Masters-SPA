@@ -5,10 +5,15 @@ import StyledHighlightLi from "./styled/StyledHighlightLi";
 import {Link} from 'react-router-dom'
 
 const UserUl = ()=>{
+    const linkStyle={
+        textDecoration: 'none',
+        color: 'inherit',
+    }
+
     return(
         <StyledUl>
-            <StyledLi><Link to='/Login'>Log-in</Link></StyledLi>
-            <StyledHighlightLi><Link to='/Signup'>Sign-up</Link></StyledHighlightLi>
+            <StyledHighlightLi><Link style={linkStyle} to='/Contact'>Contact</Link></StyledHighlightLi>
+            <StyledHighlightLi><Link style={linkStyle} to='/Newsletter'>Newsletter</Link></StyledHighlightLi>
         </StyledUl>
     )
 }

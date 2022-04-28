@@ -1,4 +1,6 @@
 const MachineryScreen = ()=>{
+    
+
     return(
         <div>Machinery</div>
     )

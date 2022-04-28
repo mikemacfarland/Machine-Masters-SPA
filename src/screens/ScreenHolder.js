@@ -8,8 +8,8 @@ import MachineryScreen from './MachineryScreen'
 import ToolingScreen from './ToolingScreen'
 import ResourcesScreen from './ResourcesScreen'
 import LocationsScreen from './LocationsScreen'
-import LoginScreen from './LoginScreen'
-import SignupScreen from './SignupScreen'
+import ContactScreen from './ContactScreen'
+import NewsLetterScreen from './NewsLetterScreen'
 
 const ScreenHolder = ()=>{
     return(
@@ -21,8 +21,8 @@ const ScreenHolder = ()=>{
                 <Route path='/Tooling' element={<ToolingScreen/>}/>
                 <Route path='/Resources' element={<ResourcesScreen/>}/>
                 <Route path='/Locations' element={<LocationsScreen/>}/>
-                <Route path='/Login' element={<LoginScreen/>}/>
-                <Route path='/Signup' element={<SignupScreen/>}/>
+                <Route path='/Contact' element={<ContactScreen/>}/>
+                <Route path='/Newsletter' element={<NewsLetterScreen/>}/>
             </Routes>
         </BrowserRouter>
     )
