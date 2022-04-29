@@ -2,7 +2,7 @@ import FlexRow from "./styled/FlexRow"
 import FlexColumn from "./styled/FlexColumn"
 
 
-const ContentItems = ({content})=>{
+const MachineryContentItems = ({content})=>{
     const imgLogoStyle ={
         width: 120,
         height: 120,
@@ -30,4 +30,4 @@ const ContentItems = ({content})=>{
     )
 }
 
-export default ContentItems
+export default MachineryContentItems

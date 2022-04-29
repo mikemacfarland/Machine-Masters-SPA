@@ -20,6 +20,14 @@ import unitedgrindingLogo from './img/unitedgrindingLogo.png'
 import doallSmall from './img/doallSmall.png'
 import doallLogo from './img/doallLogo.png'
 
+// Tooling page content
+import cogsdillLogo from './img/cogsdillLogo.png'
+import garrLogo from './img/garrLogo.png'
+import micro100Logo from './img/micro100Logo.png'
+import iscarLogo from './img/iscarLogo.png'
+import harveyLogo from './img/harveyLogo.jpg'
+import helicalLogo from './img/helicalLogo.png'
+
 // import cogLogo1 from './img/cogLogo1.svg'
 
 const images ={
@@ -43,7 +51,14 @@ const images ={
     unitedgrindingLogo,
     unitedgrindingSmall,
     doallLogo,
-    doallSmall
+    doallSmall,
+
+    cogsdillLogo,
+    garrLogo,
+    micro100Logo, 
+    iscarLogo, 
+    harveyLogo, 
+    helicalLogo 
 
 }
 

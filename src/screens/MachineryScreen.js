@@ -1,7 +1,7 @@
 // COMPONENTS
 import StyledContainer from '../components/styled/StyledContainer'
 import StyledSection from '../components/styled/StyledSection'
-import ContentItems from '../components/ContentItems'
+import MachineryContentItems from '../components/MachineryContentItems'
 import FlexRow from '../components/styled/FlexRow'
 
 // ASSETS
@@ -46,7 +46,7 @@ const MachineryScreen = ()=>{
         <StyledContainer bg={images.bg4}>
             <StyledSection>
                 <FlexRow wrap='wrap' margin='0 2.5%' justify='space-between'>
-                <ContentItems content={machineryData}/>
+                <MachineryContentItems content={machineryData}/>
                 </FlexRow>
             </StyledSection>
         </StyledContainer>
