@@ -5,6 +5,20 @@ import harveytool from './img/harveytool.png'
 import harveytoolbg from './img/harveytoolbg.jpg'
 import iscartool from './img/iscartool.gif'
 import iscartoolbg from './img/iscartoolbg.jpg'
+import bg1 from './img/bg1.jpg'
+import bg2 from './img/bg2.jpg'
+import bg3 from './img/bg3.jpg'
+import bg4 from './img/bg4.jpg'
+
+// Machinery page content
+import doosanSmall from './img/doosanSmall.png'
+import doosanLogo from './img/doosanLogo.png'
+import trakSmall from './img/trakSmall.png'
+import trakLogo from './img/trakLogo.png'
+import unitedgrindingSmall from './img/unitedgrindingSmall.png'
+import unitedgrindingLogo from './img/unitedgrindingLogo.png'
+import doallSmall from './img/doallSmall.png'
+import doallLogo from './img/doallLogo.png'
 
 // import cogLogo1 from './img/cogLogo1.svg'
 
@@ -15,7 +29,22 @@ const images ={
     harveytool,
     harveytoolbg,
     iscartool,
-    iscartoolbg
+    iscartoolbg,
+    
+    bg1,
+    bg2,
+    bg3,
+    bg4,
+
+    doosanSmall,
+    doosanLogo,
+    trakSmall,
+    trakLogo,
+    unitedgrindingLogo,
+    unitedgrindingSmall,
+    doallLogo,
+    doallSmall
+
 }
 
 export default images

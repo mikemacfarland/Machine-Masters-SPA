@@ -1,10 +1,15 @@
+import StyledContainer from "../components/styled/StyledContainer"
+import StyledSection from "../components/styled/StyledSection"
+
+import images from "../assets/images"
+
 const LocationsScreen = ()=>{
     return(
-        <div>Locations
-            <div id='map'>
-            
-            </div>
-        </div>
+        <StyledContainer bg={images.bg1}>
+            <StyledSection>
+                
+            </StyledSection>
+        </StyledContainer>
     )
 }
 
