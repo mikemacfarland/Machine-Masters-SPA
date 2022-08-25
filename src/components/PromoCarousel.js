@@ -1,7 +1,7 @@
 import images from '../assets/images.js'
 import colors from '../assets/colors.js'
-import { useState,useEffect,useRef } from 'react'
-import { act } from 'react-dom/test-utils'
+import { useState,useEffect } from 'react'
+// import { act } from 'react-dom/test-utils'
 
 const promoData =[
     {   id:1,
@@ -77,7 +77,7 @@ const PromoCarousel = ()=>{
               if(activeIdx > promoData.length){
                   activeIdx = 1
               };
-            }, 5000);
+            }, 3000);
             return () => clearInterval(interval);
           }, []);
 

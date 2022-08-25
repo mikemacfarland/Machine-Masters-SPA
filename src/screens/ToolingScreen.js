@@ -30,12 +30,12 @@ const toolingData = [
         logo: images.micro100Logo,
     },
     {
-        id: 4,
+        id: 5,
         title: 'cogsdill',
         logo: images.cogsdillLogo,
     },
     {
-        id: 4,
+        id: 6,
         title: 'garr tool',
         logo: images.garrLogo,
     }

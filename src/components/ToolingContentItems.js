@@ -1,7 +1,6 @@
 import FlexRow from "./styled/FlexRow"
 import FlexColumn from "./styled/FlexColumn"
 
-
 const ToolingContentItems = ({content})=>{
     const imgLogoStyle ={
         width: 120,
@@ -18,7 +17,7 @@ const ToolingContentItems = ({content})=>{
     return(
         content.map(data =>{
             return (
-            <FlexColumn width='200px' align='center' margin='1.25%' key={data.id}>
+            <FlexColumn width='33%' margin='0 0 10px 0' align='center' key={data.id}>
                 <h1>{data.title.toUpperCase()}</h1>
                 <img style={imgLogoStyle} src={data.logo} alt="" />
             </FlexColumn>)

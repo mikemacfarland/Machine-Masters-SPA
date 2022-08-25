@@ -12,6 +12,7 @@ const StyledTextArea = styled.textarea`
     font-weight: 400;
     background-color: ${colors.halfWhite};
     margin: .5rem auto;
+    outline: none;
     border: none;
     resize: none;
     overflowY: scroll;

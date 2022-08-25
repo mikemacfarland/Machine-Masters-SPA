@@ -4,12 +4,13 @@ import styled from "styled-components"
 const FlexRow = styled.div`
     display: flex;
     width: ${props => props.width};
+    height: ${props => (props.height ? props.height : '')};
     flex-direction: row;
     flex-wrap: ${props => props.wrap ? props.wrap : 'no-wrap'};
     align-items: ${props => props.align ? props.aling : 'center'};
     justify-content: ${props => (props.justify ? props.justify : 'center')};
     margin: ${props => (props.margin ? props.margin : '')};
-    margin: ${props => (props.padding ? props.padding : '')};
+    padding: ${props => (props.padding ? props.padding : '')};
 `
 
 export default FlexRow
